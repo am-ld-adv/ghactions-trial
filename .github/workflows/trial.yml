@@ -38,5 +38,5 @@ jobs:
           echo "BUILD_DATE=$buildDate" 
           echo "BUILD_DATE=2.$buildDate" >> $env:GITHUB_ENV
           echo "this is the github_env - $GITHUB_ENV"
-          echo "gh run number - ${{ github.run_number }}
+          echo "gh run number - ${{ github.run_number }}"
         shell: pwsh
