@@ -34,4 +34,7 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
-          echo "$GITHUB_ENV"
+          $buildDate = Get-Date -Format "yy.MMdd"
+          echo "BUILD_DATE=$buildDate" 
+          echo "BUILD_DATE=2.$buildDate" >> $env:GITHUB_ENV
+          echo "this is the github_env - $GITHUB_ENV"
